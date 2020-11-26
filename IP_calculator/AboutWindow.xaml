@@ -1,0 +1,51 @@
+﻿<Window x:Class="IP_calculator.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IP_calculator"
+        mc:Ignorable="d"
+        Title="AboutWindow" Height="315" Width="510" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" 
+        ShowInTaskbar="False" Background="#212226" WindowStyle="None" MouseLeftButtonDown="AboutWindow_MouseLeftButtonDown"
+        BorderBrush="#9e53c9" BorderThickness="1">
+    <StackPanel>
+        <Grid  Margin="0,0,0,0">
+            <Label FontSize="14" VerticalAlignment="Center" Margin="0,0,0,0"
+                   HorizontalAlignment="Center" Foreground="#9e53c9">О программе</Label>
+            <Button x:Name="btnClose" Style="{StaticResource btnClose}" HorizontalAlignment="Right" 
+                        Margin="0,5,5,0" Width="40" Height="40" Click="btnClose_Click" ></Button>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Height="35">
+            <TextBlock Margin="20,10,0,0" Foreground="AliceBlue" Width="170">Полное наименование:</TextBlock>
+            <TextBlock Margin="10,10,20,5" Foreground="AliceBlue" Width="280">Прикладная программа "IP калькулятор"</TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="35">
+            <TextBlock Margin="20,10,0,0" Foreground="AliceBlue" Width="170">Сокращенное наименование:</TextBlock>
+            <TextBlock Margin="10,10,20,5" Foreground="AliceBlue" Width="280">IP_calculator</TextBlock>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Height="35">
+            <TextBlock Margin="20,10,0,0" Foreground="AliceBlue" Width="170">Разработчики:</TextBlock>
+            <TextBlock Margin="10,10,20,5" Foreground="AliceBlue" Width="280">Яркова А.С., гр. 17КБ(с)РЗПО, ОГУ</TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="35">
+            <TextBlock Margin="20,10,0,0" Foreground="AliceBlue" Width="170">Обратная связь:</TextBlock>
+            <TextBlock Margin="10,10,20,5" Foreground="AliceBlue" Width="280">yarkova_as@mail.ru</TextBlock>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Height="50">
+            <TextBlock Margin="20,10,0,0" Foreground="AliceBlue" Width="170">Руководитель:</TextBlock>
+            <!--<TextBlock Margin="10,10,20,5" Foreground="AliceBlue"  Width="280">Ушакова М.В., старший преподаватель кафедры
+                <LineBreak/> геометрии и компьютерных наук, ОГУ</TextBlock>-->
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="35">
+            <TextBlock Margin="20,10,0,0" Foreground="AliceBlue" Width="170">Версия программы:</TextBlock>
+            <TextBlock Margin="10,10,20,5" Foreground="AliceBlue" Width="280">1.0</TextBlock>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="35">
+            <TextBlock Margin="20,10,0,0" Foreground="AliceBlue" Width="170">Год издания:</TextBlock>
+            <TextBlock Margin="10,10,20,5" Foreground="AliceBlue" Width="280">2020</TextBlock>
+        </StackPanel>
+    </StackPanel>
+</Window>
